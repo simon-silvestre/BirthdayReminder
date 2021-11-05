@@ -1,8 +1,8 @@
 import React from 'react'
 
-function BirthdayCard({ nom, age, photo }) {
+function BirthdayCard({ nom, age, photo, remove }) {
     return (
-        <div className="birthdayCard">
+        <div className="birthdayCard" onClick={remove}>
             <div className="birthdayCardImg">
                 <img src={photo} alt="profil" />
             </div>
